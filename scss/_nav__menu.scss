@@ -1,0 +1,36 @@
+.nav__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    &_text{
+                    color: #353637;
+                    font-family: 'Average Sans';
+                    font-weight: 400;
+                    transition: all 0.5s ease 0s;
+                    transform: scale(1);
+                    width: 69px;
+                    display: flex;
+                    justify-content: center;}
+                    
+    &_text:hover{color: #597193;
+                            text-decoration-line:underline;
+                            text-decoration-style: solid;
+                            text-underline-offset: 8px;
+                            text-decoration-color: #597193;
+                            transition: all 0s ease 0s;
+                            transform: scale(1);}
+    &_burger{height: 30px;
+    display: none;}
+    &_button{@extend %button}
+}
+.nav{display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 73px;
+    margin-top: 23px;
+}
+@media screen and (max-width: 769px) {
+    .nav{align-items: center;}
+    
+}
